@@ -1,0 +1,5 @@
+rvm --create 1.9.2@icebreaker
+
+if [[ -s icebreaker.gems ]] ; then
+ rvm gemset import icebreaker.gems
+fi
