@@ -11,7 +11,7 @@ IceBreaker provides a base Rails 3 application with the Mongoid ORM (or OM) and 
 
     gem install icebreaker
 
-    break new my_app
+    ice new my_app
 
 
 ### Options
