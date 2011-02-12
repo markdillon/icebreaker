@@ -13,7 +13,7 @@ gem 'bson_ext', '1.2.1'
 gem "will_paginate", "3.0.pre2"
 
 # Development dependencies
-gem 'html5-boilerplate'
+# gem 'html5-boilerplate' # TODO: Get html5-boilerplate working
 gem 'rspec-rails', '2.5.0', :group => [:development]
 
 # Development and test support
