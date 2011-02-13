@@ -1,0 +1,1 @@
+run "rails generate jquery:install"

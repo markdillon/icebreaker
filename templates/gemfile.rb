@@ -10,7 +10,11 @@ gem 'bson', '1.2.1'
 gem 'bson_ext', '1.2.1'
 
 # HTML, CSS and JavaScript
+gem "haml-rails"
 gem "will_paginate", "3.0.pre2"
+
+# JavaScript
+gem "jquery-rails"
 
 # Development dependencies
 # gem 'html5-boilerplate' # TODO: Get html5-boilerplate working

@@ -44,16 +44,19 @@ apply File.expand_path("../gemfile.rb", __FILE__)
 # Apply Mongoid
 apply File.expand_path("../mongoid.rb", __FILE__)
 
-# # Apply Test Suite 
+# Apply JQuery
+apply File.expand_path("../jquery.rb", __FILE__)
+
+# Apply Test Suite 
 apply File.expand_path("../test_suite.rb", __FILE__)
 
-# # Remove RSpec stuff we are not gonna use right away
+# Remove RSpec stuff we are not gonna use right away
 apply File.expand_path("../rspec_clean.rb", __FILE__)
 
 # Apply rails clean up
 apply File.expand_path("../rails_clean.rb", __FILE__)
 
-# # Apply RVM settings
+# Apply RVM settings
 apply File.expand_path("../rvm.rb", __FILE__)
 
 git :add => "."
