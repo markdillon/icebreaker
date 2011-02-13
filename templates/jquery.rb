@@ -1,1 +1,1 @@
-run "rails generate jquery:install"
+run "rails generate jquery:install --ui"
