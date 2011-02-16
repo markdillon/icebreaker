@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    icebreaker (0.0.1)
+    icebreaker (0.0.3)
       rails
       thor
 

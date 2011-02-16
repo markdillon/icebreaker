@@ -19,6 +19,7 @@ gem "jquery-rails"
 # Development dependencies
 # gem 'html5-boilerplate' # TODO: Get html5-boilerplate working
 gem 'rspec-rails', '2.5.0', :group => [:development]
+gem 'nifty-generators'
 
 # Development and test support
 gem 'factory_girl_rails', :group => [:development, :test]

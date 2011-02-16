@@ -14,16 +14,6 @@ def get_remote_https_file(source, destination)
   File.open(path, "w") { |file| file.write(response.body) }
 end
 
-# Check for a gemset and warn if none
-gemset = `rvm gemset name`.chomp
-unless gemset == 'icebreaker'
-  say "It is recommend that you use a separate RVM gemset called 'icebreaker' when creating a Rails project with IceBreaker.  This will keep your system gems clean."
-  say "You can create it by running this command: rvm use 1.9.2@icebreaker --create"
-  if yes?("Would you like to exit now and create a separate RVM gemset for icebreaker?")
-    exit 0
-  end
-end
-
 say "Building Application with IceBreaker..."
 
 append_file '.gitignore' do <<-RUBY
