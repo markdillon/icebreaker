@@ -31,7 +31,6 @@ gem 'faker', :group => [:development, :test]
 # Test dependencies
 gem 'rspec', '2.5.0', :group => [:test]
 gem 'webrat', '0.7.1', :group => [:test]
-gem 'factory_girl_rails', '1.0', :group => [:test]
 
 # Utilities
 gem 'awesome_print', :group => [:development]
