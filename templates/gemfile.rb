@@ -16,6 +16,9 @@ gem "will_paginate", "3.0.pre2"
 # JavaScript
 gem "jquery-rails"
 
+# Crypto
+gem "bcrypt-ruby", :require => "bcrypt"
+
 # Development dependencies
 # gem 'html5-boilerplate' # TODO: Get html5-boilerplate working
 gem 'rspec-rails', '2.5.0', :group => [:development]
@@ -28,6 +31,7 @@ gem 'faker', :group => [:development, :test]
 # Test dependencies
 gem 'rspec', '2.5.0', :group => [:test]
 gem 'webrat', '0.7.1', :group => [:test]
+gem 'factory_girl_rails', '1.0', :group => [:test]
 
 # Utilities
 gem 'awesome_print', :group => [:development]
