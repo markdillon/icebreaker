@@ -49,6 +49,9 @@ apply File.expand_path("../rails_clean.rb", __FILE__)
 # Apply RVM settings
 apply File.expand_path("../rvm.rb", __FILE__)
 
+# Install Heroku gem
+apply File.expand_path("../heroku.rb", __FILE__)
+
 git :add => "."
 git :commit => "-am 'Initial Icebreaker Commit'"
 

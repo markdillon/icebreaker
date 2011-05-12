@@ -1,12 +1,7 @@
 run 'rails generate rspec:install'
 
 # Specify rspec for generators
-gsub_file 'config/application.rb', /.*config\.generators\.test_framework.*/ do
-<<-RUBY
-    config.generators.integration_tool :rspec
-    config.generators.test_framework   :rspec
-RUBY
-end
+gsub_file 'config/application.rb', /.*config\.generators\.test_framework = false/, '    # config.generators.test_framework = false'
 
 # MongoID Teardown
 gsub_file 'spec/spec_helper.rb', /config\.fixture_path/, '# config.fixture_path'
