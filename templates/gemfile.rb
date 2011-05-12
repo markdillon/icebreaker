@@ -33,7 +33,7 @@ gem 'webrat', '0.7.1', :group => [:test]
 
 # Utilities
 gem 'awesome_print', :group => [:development]
-gem 'heroku', :group => :development
+# gem 'heroku', :group => :development
 
 
 # Install bundled gems
