@@ -1,14 +1,18 @@
-run 'rm Gemfile'
-create_file 'Gemfile', "source 'http://rubygems.org'\n"
+append_file "Gemfile" do
+<<-RUBY
 
+# Project Gems
+
+RUBY
+end
 # Rails
-gem "rails", "3.1.0.beta1"
 
 # MongoID
-gem "mongoid", "~> 2.0"
-gem "bson_ext", "~> 1.3"
+gem "mongoid", :git => "http://github.com/mongoid/mongoid.git"
+gem "bson_ext"
 
 # HTML, CSS and JavaScript
+gem "haml"
 gem "will_paginate", "3.0.pre2"
 
 # Crypto
