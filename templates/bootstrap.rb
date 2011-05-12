@@ -37,6 +37,9 @@ apply File.expand_path("../mongoid.rb", __FILE__)
 # Apply JQuery
 apply File.expand_path("../jquery.rb", __FILE__)
 
+# Convert to HAML
+apply File.expand_path("../haml.rb", __FILE__)
+
 # Apply Test Suite 
 apply File.expand_path("../test_suite.rb", __FILE__)
 
@@ -49,8 +52,11 @@ apply File.expand_path("../rails_clean.rb", __FILE__)
 # Apply RVM settings
 apply File.expand_path("../rvm.rb", __FILE__)
 
+# Install Heroku gem
+apply File.expand_path("../heroku.rb", __FILE__)
+
 git :add => "."
-git :commit => "-am 'Initial Commit'"
+git :commit => "-am 'Initial Icebreaker Commit'"
 
 say <<-D
 
