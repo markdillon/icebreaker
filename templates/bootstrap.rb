@@ -50,7 +50,7 @@ apply File.expand_path("../rails_clean.rb", __FILE__)
 apply File.expand_path("../rvm.rb", __FILE__)
 
 git :add => "."
-git :commit => "-am 'Initial Commit'"
+git :commit => "-am 'Initial Icebreaker Commit'"
 
 say <<-D
 

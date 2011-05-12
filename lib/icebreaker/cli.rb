@@ -9,7 +9,7 @@ module IceBreaker
     desc "new [app]", "Create a new Rails 3 application"
     long_desc <<-D
       IceBreaker will ask you a few questions to determine what features you
-      would like to generate. Based on your answers it will setup a new Rails 3 application.
+      would like to generate. Based on your answers it will setup a new Rails 3.1 application.
     D
     
     def new(project)
@@ -23,8 +23,8 @@ module IceBreaker
         end
       end
       
-      command = "rails new #{project} --skip-active-record --skip-test-unit --skip-prototype --template=#{template} "
-      puts "Creating new Rails 3 project with: #{command}"
+      command = "rails new #{project} --skip-active-record --skip-test-unit --template=#{template} "
+      puts "Creating new Rails 3.1 project with: #{command}"
       exec(command)
     end
 

@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = "icebreaker-#{s.version}"
   s.description = "Generate a Rails 3 app with the Mongoid ORM (or OM) and RSpec for BDD testing."
 
-  s.required_rubygems_version = "~> 1.3.6"
+  s.required_rubygems_version = "~> 1.6.0"
   s.rubyforge_project         = "icebreaker"
 
   s.add_dependency "thor"
