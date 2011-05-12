@@ -37,6 +37,9 @@ apply File.expand_path("../mongoid.rb", __FILE__)
 # Apply JQuery
 apply File.expand_path("../jquery.rb", __FILE__)
 
+# Convert to HAML
+apply File.expand_path("../haml.rb", __FILE__)
+
 # Apply Test Suite 
 apply File.expand_path("../test_suite.rb", __FILE__)
 
