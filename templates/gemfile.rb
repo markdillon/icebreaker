@@ -12,7 +12,7 @@ gem "mongoid", :git => "http://github.com/mongoid/mongoid.git"
 gem "bson_ext"
 
 # HTML, CSS and JavaScript
-gem "haml"
+gem "haml-rails"
 gem "will_paginate", "3.0.pre2"
 
 # Crypto

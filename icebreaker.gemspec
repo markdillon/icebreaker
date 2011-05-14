@@ -15,8 +15,6 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = "icebreaker"
 
   s.add_dependency "thor"
-  # s.add_dependency "mail" # Hack to get around "mail requires i18n (~> 0.4.1, runtime)" error
-  s.add_dependency "rails", '3.1.0.beta1'
   s.add_development_dependency "bundler"
 
   s.files        = `git ls-files`.split("\n")

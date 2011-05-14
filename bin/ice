@@ -1,4 +1,12 @@
 #!/usr/bin/env ruby
+
+# Ensure proper version of Rails is installed
+unless `gem which rails`.chomp =~ /3.1/
+  puts "IceBreaker requires rails 3.1 or greater.  Please install with the following command and then re-run the ice command:"
+  puts "$ gem install rails -v 3.1.0.beta1 --no-ri --no-rdoc"
+  exit 0
+end
+
 $:.unshift(File.dirname(__FILE__) + '/../lib') unless $:.include?(File.dirname(__FILE__) + '/../lib')
 require 'icebreaker/cli'
 IceBreaker::CLI.start
