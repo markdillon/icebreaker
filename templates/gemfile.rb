@@ -23,6 +23,9 @@ gem "bcrypt-ruby", :require => "bcrypt"
 gem 'rspec-rails', '2.6.0.rc6', :group => [:development]
 gem 'nifty-generators'
 
+# Facebook, Twitter, etc. OAuth Authentication
+gem "omniauth"
+
 # Development and test support
 gem 'factory_girl_rails', :group => [:development, :test]
 gem 'faker', :group => [:development, :test]
