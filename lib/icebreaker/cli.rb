@@ -30,7 +30,7 @@ module IceBreaker
 
     desc "version", "Prints IceBreaker's version information"
     def version
-      say "IceBreaker version #{IceBreaker::VERSION}"
+      say "IceBreaker version #{IceBreaker::VERSION}" #TODO: This isn't working in installed gem
     end
     map %w(-v --version) => :version
 
