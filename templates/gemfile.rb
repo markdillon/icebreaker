@@ -37,5 +37,8 @@ gem 'webrat', '0.7.1', :group => [:test]
 # Utilities
 gem 'awesome_print', :group => [:development]
 
+# Heroku Support
+gem 'therubyracer-heroku', '0.8.1.pre3'
+
 # Install bundled gems
 run 'bundle install'
