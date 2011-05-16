@@ -17,6 +17,7 @@ module IceBreaker
       # Check for a gemset and warn if none
       gemset = `rvm gemset name`.chomp
       unless gemset == project
+        say "Your current rvm gemset name is: #{gemset}"
         say "It is recommend that you use a separate RVM gemset called '#{project}' when creating a Rails project with IceBreaker.  This will keep your system gems clean."
         say "You can exit now and create it by running this command: rvm use 1.9.2@#{project} --create"
         if yes?("Would you like to exit now and create a separate RVM gemset for #{project}?")
