@@ -8,20 +8,15 @@ end
 # Rails
 
 # MongoID
-gem "mongoid", :git => "http://github.com/mongoid/mongoid.git"
+gem "mongoid"
 gem "bson_ext"
 
 # HTML, CSS and JavaScript
-gem "haml-rails"
-gem "will_paginate", "3.0.pre2"
-
-# Crypto
-gem "bcrypt-ruby", :require => "bcrypt"
+gem "haml", :git => "https://github.com/nex3/haml.git"
+gem 'kaminari'
 
 # Development dependencies
-# gem 'html5-boilerplate' # TODO: Get html5-boilerplate working
-gem 'rspec-rails', '2.6.0.rc6', :group => [:development]
-gem 'nifty-generators'
+gem "rspec-rails", "2.6.1"
 
 # Facebook, Twitter, etc. OAuth Authentication
 gem "omniauth"
@@ -31,14 +26,11 @@ gem 'factory_girl_rails', :group => [:development, :test]
 gem 'faker', :group => [:development, :test]
 
 # Test dependencies
-gem 'rspec', '2.6.0.rc6', :group => [:test]
+gem 'rspec', '2.6.0', :group => [:test]
 gem 'webrat', '0.7.1', :group => [:test]
 
-# Utilities
-gem 'awesome_print', :group => [:development]
-
 # Heroku Support
-gem 'therubyracer-heroku', '0.8.1.pre3'
+gem 'therubyracer-heroku', '0.8.1.pre3', :group => [:production]
 
 # Install bundled gems
 run 'bundle install'
