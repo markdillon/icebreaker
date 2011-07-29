@@ -3,34 +3,53 @@ append_file "Gemfile" do
 
 # Project Gems
 
-RUBY
-end
-# Rails
+# View Related
+gem "haml", :git => "https://github.com/nex3/haml.git"
+gem 'kaminari'
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
-# MongoID
+# Object Mapper
 gem "mongoid"
 gem "bson_ext"
 
-# HTML, CSS and JavaScript
-gem "haml", :git => "https://github.com/nex3/haml.git"
-gem 'kaminari'
+# Date/Time Parsing
+# gem 'nickel', :git => "https://github.com/lzell/nickel"
 
-# Development dependencies
-gem "rspec-rails", "2.6.1"
+# Authentication
+gem "omniauth", '~> 0.2.6'
+gem "bcrypt-ruby", :require => "bcrypt"
 
-# Facebook, Twitter, etc. OAuth Authentication
-gem "omniauth"
+# Location Stuff
+gem "simplegeo"
 
-# Development and test support
-gem 'factory_girl_rails', :group => [:development, :test]
-gem 'faker', :group => [:development, :test]
+# FIXME: Get mongoid_geo working
+# gem "mongoid_geo"
 
-# Test dependencies
-gem 'rspec', '2.6.0', :group => [:test]
-gem 'webrat', '0.7.1', :group => [:test]
+group :development do
+  gem "thin"
+  gem "rspec-rails", "2.6.1.beta1"  
+  gem "awesome_print"
+end
 
-# Heroku Support
-gem 'therubyracer-heroku', '0.8.1.pre3', :group => [:production]
+group :test do
+  # Pretty printed test output
+  gem 'turn', :require => false
+  gem "rspec", "2.6.0"
+  gem "webrat", "0.7.1"
+end
+
+group :development, :test do
+  gem "factory_girl_rails"
+  gem "faker"
+end
+
+group :production do
+  gem 'unicorn'
+  gem 'therubyracer-heroku', '0.8.1.pre3', :group => [:production]  
+end
+
+RUBY
+end
 
 # Install bundled gems
-run 'bundle install'
+run 'bundle install --binstubs --without production'

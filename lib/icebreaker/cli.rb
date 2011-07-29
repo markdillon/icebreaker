@@ -1,6 +1,6 @@
 require 'thor'
 require 'thor/actions'
-require 'active_support/secure_random'
+# require 'active_support/secure_random'
 
 module IceBreaker
   class CLI < Thor
