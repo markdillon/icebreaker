@@ -3,7 +3,7 @@
 # Ensure proper version of Rails is installed
 unless `gem which rails`.chomp =~ /3.1.0.rc/
   puts "IceBreaker requires rails 3.1 or greater.  Please install with the following command and then re-run the ice command:"
-  puts "$ gem install rails -v 3.1.0.rc4 --no-ri --no-rdoc"
+  puts "$ gem install rails -v 3.1.0.rc5 --no-ri --no-rdoc"
   exit 0
 end
 
