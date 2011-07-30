@@ -26,6 +26,7 @@ gem "simplegeo"
 # gem "mongoid_geo"
 
 group :development do
+  gem "haml-rails"
   gem "thin"
   gem "rspec-rails", "2.6.1.beta1"  
   gem "awesome_print"
