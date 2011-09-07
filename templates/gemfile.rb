@@ -4,7 +4,7 @@ append_file "Gemfile" do
 # Project Gems
 
 # View Related
-gem "haml", :git => "https://github.com/nex3/haml.git"
+gem "haml"
 gem 'kaminari'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 
@@ -16,27 +16,22 @@ gem "bson_ext"
 # gem 'nickel', :git => "https://github.com/lzell/nickel"
 
 # Authentication
-gem "omniauth", '~> 0.2.6'
-gem "bcrypt-ruby", :require => "bcrypt"
+gem "omniauth"
 
 # Location Stuff
-gem "simplegeo"
-
-# FIXME: Get mongoid_geo working
-# gem "mongoid_geo"
+# gem "simplegeo"
 
 group :development do
   gem "haml-rails"
-  gem "thin"
-  gem "rspec-rails", "2.6.1.beta1"  
+  gem "rspec-rails"
   gem "awesome_print"
 end
 
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
-  gem "rspec", "2.6.0"
-  gem "webrat", "0.7.1"
+  gem "rspec"
+  gem "webrat"
 end
 
 group :development, :test do
