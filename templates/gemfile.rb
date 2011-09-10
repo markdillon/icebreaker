@@ -31,7 +31,8 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
   gem "rspec"
-  gem "webrat"
+  gem "capybara"
+  gem "launchy"
 end
 
 group :development, :test do
