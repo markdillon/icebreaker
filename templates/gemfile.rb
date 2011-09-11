@@ -5,8 +5,8 @@ append_file "Gemfile" do
 
 # View Related
 gem "haml"
-gem 'kaminari'
-gem 'gravatar_image_tag', '1.0.0.pre2'
+gem "kaminari"
+gem "gravatar_image_tag", "1.0.0.pre2"
 
 # Object Mapper
 gem "mongoid"
@@ -18,9 +18,6 @@ gem "bson_ext"
 # Authentication
 gem "omniauth"
 
-# Location Stuff
-# gem "simplegeo"
-
 group :development do
   gem "haml-rails"
   gem "rspec-rails"
@@ -29,21 +26,21 @@ end
 
 group :test do
   # Pretty printed test output
-  gem 'turn', :require => false
+  gem "turn", :require => false
   gem "rspec"
   gem "capybara"
   gem "launchy"
 end
 
 group :development, :test do
-  gem 'database_cleaner'
+  gem "database_cleaner"
   gem "factory_girl_rails"
   gem "faker"
 end
 
 group :production do
-  gem 'unicorn'
-  gem 'therubyracer-heroku', '0.8.1.pre3', :group => [:production]  
+  gem "unicorn"
+  gem "therubyracer-heroku", "0.8.1.pre3", :group => [:production]  
 end
 
 RUBY
