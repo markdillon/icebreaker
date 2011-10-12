@@ -6,10 +6,10 @@ module IceBreaker
   class CLI < Thor
     include Thor::Actions
 
-    desc "new [app]", "Create a new Rails 3.1 application"
+    desc "new [app]", "Create a new Rails 3.1.1 application"
     long_desc <<-D
       IceBreaker will ask you a few questions to determine what features you
-      would like to generate. Based on your answers it will setup a new Rails 3.1 application.
+      would like to generate. Based on your answers it will setup a new Rails 3.1.1 application.
     D
     
     def new(project)
@@ -26,7 +26,7 @@ module IceBreaker
       end
             
       command = "rails new #{project} --skip-active-record --skip-test-unit --template=#{template} "
-      puts "Creating new Rails 3.1 project with: #{command}"
+      puts "Creating new Rails 3.1.1 project with: #{command}"
       exec(command)
     end
 

@@ -1,6 +1,6 @@
 IceBreaker
 ===========
-Generate a Rails 3.1 app with the Mongoid ORM (or OM) and RSpec for BDD testing.
+Generate a Rails 3.1.1 app with the Mongoid ORM (or OM) and RSpec for BDD testing.
 
 
 ### What you get
