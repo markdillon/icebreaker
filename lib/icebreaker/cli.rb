@@ -14,6 +14,13 @@ module IceBreaker
     
     def new(project)
       
+      # Ensure proper version of Rails is installed
+      unless `gem which rails`.chomp =~ /3.1.1/
+        puts "IceBreaker requires rails 3.1.1 or greater.  Please install with the following command and then re-run the ice command:"
+        puts "$ gem install rails -v 3.1.1 --no-ri --no-rdoc"
+        exit 0
+      end
+      
       # Check for a gemset and warn if none
       gemset = `rvm gemset name`.chomp
       unless gemset == project
