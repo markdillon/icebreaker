@@ -3,6 +3,9 @@ append_file "Gemfile" do
 
 # Project Gems
 
+# For Secure Authentication
+gem "bcrypt-ruby"
+
 # View Related
 gem "haml"
 gem "kaminari"
