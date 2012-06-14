@@ -12,7 +12,7 @@ gem "kaminari"
 gem "gravatar_image_tag", "1.0.0.pre2"
 
 # Object Mapper
-gem "mongoid"
+gem "mongoid", "~> 3.0.0.rc"
 gem "bson_ext"
 
 # Date/Time Parsing
