@@ -15,9 +15,10 @@ module IceBreaker
     def new(project)
       
       # Ensure proper version of Rails is installed
-      unless `gem which rails`.chomp =~ /3.2.6/
+      unless `rails -v`.chomp =~ /3.2.6/
         puts "IceBreaker requires rails 3.2.6 or greater.  Please install with the following command and then re-run the ice command:"
         puts "$ gem install rails -v 3.2.6 --no-ri --no-rdoc"
+        puts "Currently getting #{`rails -v`}"
         exit 0
       end
       
