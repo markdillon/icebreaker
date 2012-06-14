@@ -20,6 +20,5 @@ if ENV['MONGOHQ_URL']
   ENV['MONGOID_DATABASE'] = mongo_uri.path.gsub('/', '')
 end
 
-require 'mongoid/railtie'
 RUBY
 end
