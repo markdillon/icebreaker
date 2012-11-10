@@ -15,7 +15,7 @@ module IceBreaker
     def new(project)
       
       # Ensure proper version of Rails is installed
-      unless `rails -v`.chomp =~ /3.2.8/
+      unless `bundle exec rails -v`.chomp =~ /3.2.8/
         puts "IceBreaker requires rails 3.2.8 or greater.  Please install with the following command and then re-run the ice command:"
         puts "$ gem install rails -v 3.2.8 --no-ri --no-rdoc"
         puts "Currently getting #{`rails -v`}"
@@ -23,7 +23,7 @@ module IceBreaker
       end
       
       # Check for a gemset and warn if none
-      gemset = `rvm gemset name`.chomp
+      gemset = `bundle exec rvm gemset name`.chomp
       unless gemset == project
         say "Your current rvm gemset name is: #{gemset}"
         say "It is recommend that you use a separate RVM gemset called '#{project}' when creating a Rails project with IceBreaker.  This will keep your system gems clean."
