@@ -18,7 +18,7 @@ module IceBreaker
       unless `bundle exec rails -v`.chomp =~ /3.2.8/
         puts "IceBreaker requires rails 3.2.8 or greater.  Please install with the following command and then re-run the ice command:"
         puts "$ gem install rails -v 3.2.8 --no-ri --no-rdoc"
-        puts "Currently getting #{`rails -v`}"
+        puts "Currently getting #{`rvm current`}"
         exit 0
       end
       
