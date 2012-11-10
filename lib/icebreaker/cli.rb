@@ -6,18 +6,18 @@ module IceBreaker
   class CLI < Thor
     include Thor::Actions
 
-    desc "new [app]", "Create a new Rails 3.2.6 application"
+    desc "new [app]", "Create a new Rails 3.2.8 application"
     long_desc <<-D
       IceBreaker will ask you a few questions to determine what features you
-      would like to generate. Based on your answers it will setup a new Rails 3.2.6 application.
+      would like to generate. Based on your answers it will setup a new Rails 3.2.8 application.
     D
     
     def new(project)
       
       # Ensure proper version of Rails is installed
-      unless `rails -v`.chomp =~ /3.2.6/
-        puts "IceBreaker requires rails 3.2.6 or greater.  Please install with the following command and then re-run the ice command:"
-        puts "$ gem install rails -v 3.2.6 --no-ri --no-rdoc"
+      unless `rails -v`.chomp =~ /3.2.8/
+        puts "IceBreaker requires rails 3.2.8 or greater.  Please install with the following command and then re-run the ice command:"
+        puts "$ gem install rails -v 3.2.8 --no-ri --no-rdoc"
         puts "Currently getting #{`rails -v`}"
         exit 0
       end
@@ -34,7 +34,7 @@ module IceBreaker
       end
             
       command = "rails new #{project} --skip-active-record --skip-test-unit --template=#{template} "
-      puts "Creating new Rails 3.2.6 project with: #{command}"
+      puts "Creating new Rails 3.2.8 project with: #{command}"
       exec(command)
     end
 

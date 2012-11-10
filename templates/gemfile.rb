@@ -3,32 +3,21 @@ append_file "Gemfile" do
 
 # Project Gems
 
-# For Secure Authentication
-gem "bcrypt-ruby"
-
 # View Related
 gem "haml"
 gem "kaminari"
-gem "gravatar_image_tag", "1.0.0.pre2"
+gem 'bootstrap-sass-rails', :group => :assets
+gem 'jquery-ui-rails', :group => :assets
 
 # Object Mapper
-gem "mongoid", "~> 3.0.0.rc"
-gem "bson_ext"
-
-# Date/Time Parsing
-# gem 'nickel', :git => "https://github.com/lzell/nickel"
-
-# Authentication
-gem "omniauth"
+gem "mongoid", "~> 3.0.11"
 
 group :development do
   gem "haml-rails"
   gem "rspec-rails"
-  gem "awesome_print"
 end
 
 group :test do
-  # Pretty printed test output
   gem "turn", :require => false
   gem "rspec"
   gem "capybara"
@@ -43,11 +32,11 @@ end
 
 group :production do
   gem "unicorn"
-  gem "therubyracer-heroku", "0.8.1.pre3", :group => [:production]  
+  # gem "newrelic_rpm"
 end
 
 RUBY
 end
 
 # Install bundled gems
-run 'bundle install --binstubs --without production'
+run 'bundle install --without production'

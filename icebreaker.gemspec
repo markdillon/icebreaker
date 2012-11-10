@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["mdillon@gmail.com"]
   s.homepage    = "http://github.com/markdillon/icebreaker"
   s.summary     = "icebreaker-#{s.version}"
-  s.description = "Generate a Rails 3.2.6 app with the Mongoid ORM (or OM) and RSpec for BDD testing."
+  s.description = "Generate a Rails 3.2.8 app with the Mongoid ORM (or OM) and RSpec for BDD testing."
 
   s.rubyforge_project         = "icebreaker"
 
